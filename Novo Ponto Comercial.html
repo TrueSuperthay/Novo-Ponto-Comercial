@@ -9,24 +9,32 @@
 <body>
 <div class="fluig-style-guide">
 <form name="form" role="form">
-<div class="form-group">
-<label for="nome">Nome</label>
-<input type="text" name="nome" class="form-control" id="nome" placeholder="Ex: Daniel Braga">
-</div>
-<div class="form-group">
-<label for="email">E-mail</label>
-<input type="email" name="email" class="form-control" id="email" placeholder="E-mail">
-</div>
-<div class="form-group">
-<label for="telefone">Telefone</label>
-<input type="text" name="telefone" class="form-control" id="telefone" placeholder="(21) 0000-0000">
-</div>
-<div class="form-group">
-<label for="arquivo">Anexo</label>
-<input type="file" id="arquivo" name="arquivo">
-<p class="help-block">Até 10MB</p>
-</div>
+	<div class="row">
+		<div class="form-group col-md-6">
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" class="form-control" id="nome" placeholder="Ex: Daniel Braga">
+		</div>
+		<div class="form-group col-md-4">
+			<label for="email">E-mail</label>
+			<input type="email" name="email" class="form-control" id="email" placeholder="E-mail">
+		</div>
+		<div class="form-group col-md-2">
+			<label for="telefone">Telefone</label>
+			<input type="text" name="telefone" class="form-control" id="telefone" placeholder="(21) 0000-0000">
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-md-2">
+			<label for="rg">RG</label>
+			<input type="text" name="rg" class="form-control" id="rg" placeholder="Documento oficial">
+		</div>
+		<div class="form-group col-md-2">
+			<label for="dataNascimento">Data de Nascimento</label>
+			<input type="text" name="dataNascimento" class="form-control" id="dataNascimento" placeholder="DD/MM/AAAA">
+		</div>
+	</div>
 </form>
 </div>
 </body>
+<script type="text/javascript">var campoDataNascimento = FLUIGC.calendar('#dataNascimento');</script>
 </html>
